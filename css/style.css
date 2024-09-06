@@ -619,7 +619,10 @@ a:focus {
   left: initial;
   right: 0;
 }
-
+/* buy */
+.bg{
+  background-color: #000000;
+}
 /* contact section */
 .contact_section {
   position: relative;
@@ -921,6 +924,35 @@ a:focus {
 
 .footer_section a {
   color: rgba(254, 254, 255, 0.7);
+}
+
+.lec{
+  width: 150px;
+  height: 300px;
+}
+
+.slider_section1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider_section1 img.lec1 {
+  position: fixed; /* Fixed position to keep it in place */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  object-fit: cover; /* Ensure the image covers the entire area */
+  z-index: -1; /* Place it behind other content */
+}
+
+.carousel1 {
+  position: relative;
+  z-index: 1; /* Ensure carousel content is above the image */
+}
+
+.carousel-inner1 {
+  position: relative;
 }
 
 /* end footer section*/
