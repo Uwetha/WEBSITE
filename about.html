@@ -11,15 +11,84 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
 
-  <title>Guarder</title>
+  <title>Dr. Manjeet Rege</title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
+  <style>
+    .content_section {
+      display: flex;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .content_section img {
+      max-width: 80%;
+      /* height: auto; */
+      margin-right: 20px;
+    }
+
+    .content_section.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .content_text {
+      flex: 1;
+    }
+    .abt1_st{
+      width: 45%;
+      height: 5%;
+      /* border-radius:50% 50% 0 0/100% 100% 0 0; */
+      border-top-right-radius: 30%;
+      border-top-left-radius: 30%;
+    }
+    .abt2_st{
+      width: 55%;
+      height: 35%;
+    }
+    .wrk_container {
+      background-color: hsla(210,38.04%,36.08%,1); 
+      padding: 40px;
+      text-align: center;
+    }
+
+    .wrk_container h2 {
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .wrk_container p {
+      font-style: italic;
+      color: #fff;
+    }
+
+    .btn-box {
+      margin-top: 20px;
+    }
+
+    .btn-box a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #90c1f5;
+      color: #fff; 
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-box a:hover {
+      background-color: #499af1;
+      color: #fff; 
+    }
+  </style>
+
   <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap"
+    rel="stylesheet" />
 
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
@@ -27,49 +96,28 @@
   <link href="css/responsive.css" rel="stylesheet" />
 </head>
 
+
 <body class="sub_page">
   <div class="hero_area">
     <!-- header section strats -->
     <div class="hero_bg_box">
       <div class="img-box">
-        <img src="images/hero-bg.jpg" alt="">
+        <img src="images/Abt_img1.jpg" alt="" class="img_main">
       </div>
     </div>
 
     <header class="header_section">
-      <div class="header_top">
-        <div class="container-fluid">
-          <div class="contact_link-container">
-            <a href="" class="contact_link1">
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
-              <span>
-                Lorem ipsum dolor sit amet,
-              </span>
-            </a>
-            <a href="" class="contact_link2">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>
-                Call : +01 1234567890
-              </span>
-            </a>
-            <a href="" class="contact_link3">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              <span>
-                demo@gmail.com
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
       <div class="header_bottom">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container">
             <a class="navbar-brand" href="index.html">
+              <img src="images/logo.jpg" alt="LOGO Image" class="logo_img">
               <span>
-                Guarder
+                Dr. Manjeet Rege
               </span>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class=""></span>
             </button>
 
@@ -81,11 +129,15 @@
                 <li class="nav-item active">
                   <a class="nav-link" href="about.html"> About</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="service.html"> Services </a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#"> Work With Me </a>
+                  <div class="dropdown-content">
+                    <a href="Consulting.html">CONSULTING</a>
+                    <a href="speak.html">SPEAKER</a>
+                  </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="guard.html"> Guards </a>
+                  <a class="nav-link" href="article.html"> Article </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact us</a>
@@ -96,165 +148,97 @@
         </div>
       </div>
     </header>
+    <div class="container_abt">
+      <h1>
+        ABOUT ME
+      </h1>
+    </div>
     <!-- end header section -->
   </div>
 
-  <!-- about section -->
+  <!-- First content section -->
+  <section class="content_section">
+    <img src="images/Abt1.jpg" alt="Image 1" class="abt1_st">
+    <div class="content_text">
+      <h2>Section Title</h2>
+      <p>Content goes here. This section has the image on the left and content on the right.</p>
+    </div>
+  </section>
 
-  <section class="about_section layout_padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 px-0">
-          <div class="img_container">
-            <div class="img-box">
-              <img src="images/about-img.jpg" alt="" />
-            </div>
-          </div>
+  <div class="wrk_container">
+    <div class="head_container">
+      <h2>
+        Testimonials
+      </h2>
+    </div>
+    <div class="btn-box">
+      <a href="">
+        Read More
+      </a>
+    </div>
+    <p>“The best part is that Nupur makes us feel comfortable, which helps us understand ourselves much better & yet motivates us to make changes.” - Shreyas Mulay, Europe</p>
+  </div>
+
+  <!-- Second content section -->
+  <section class="content_section reverse">
+    <img src="images/Abt2.jpg" alt="Image 2" class="abt2_st">
+    <div class="content_text">
+      <h2>Another Section Title</h2>
+      <p>Content goes here. This section has the image on the right and content on the left.</p>
+    </div>
+  </section>
+
+  <!-- contact section -->
+  <section class="contact_section layout_padding">
+    <div class="bg">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2>
+            Get In touch
+          </h2>
         </div>
-        <div class="col-md-6 px-0">
-          <div class="detail-box">
-            <div class="heading_container ">
-              <h2>
-                Who Are We?
-              </h2>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-              in reprehenderit in voluptate velit
-            </p>
-            <div class="btn-box">
-              <a href="">
-                Read More
-              </a>
+        <div class="">
+          <div class="row">
+            <div class="col-md-7 mx-auto">
+              <form action="#">
+                <div class="contact_form-container">
+                  <div>
+                    <div>
+                      <input type="text" placeholder="First Name" />
+                    </div>
+                    <div>
+                      <input type="text" placeholder="Last Name" />
+                    </div>
+                    <div>
+                      <input type="email" placeholder="Email" />
+                    </div>
+                    <div class="btn-box ">
+                      <button type="submit">
+                        Send
+                      </button>
+                    </div>
+                    <div class="btn-box ">
+                      <button type="submit">
+                        Buy a book
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- end about section -->
-
-  <!-- info section -->
-  <section class="info_section ">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="info_logo">
-            <a class="navbar-brand" href="index.html">
-              <span>
-                Guarder
-              </span>
-            </a>
-            <p>
-              dolor sit amet, consectetur magna aliqua. Ut enim ad minim veniam, quisdotempor incididunt r
-            </p>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="info_links">
-            <h5>
-              Useful Link
-            </h5>
-            <ul>
-              <li>
-                <a href="">
-                  dolor sit amet, consectetur
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  magna aliqua. Ut enim ad
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  minim veniam,
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  quisdotempor incididunt r
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="info_info">
-            <h5>
-              Contact Us
-            </h5>
-          </div>
-          <div class="info_contact">
-            <a href="" class="">
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
-              <span>
-                Lorem ipsum dolor sit amet,
-              </span>
-            </a>
-            <a href="" class="">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>
-                Call : +01 1234567890
-              </span>
-            </a>
-            <a href="" class="">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              <span>
-                demo@gmail.com
-              </span>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="info_form ">
-            <h5>
-              Newsletter
-            </h5>
-            <form action="#">
-              <input type="email" placeholder="Enter your email">
-              <button>
-                Subscribe
-              </button>
-            </form>
-            <div class="social_box">
-              <a href="">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-youtube" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end info_section -->
-
-
-
-
-  <!-- footer section -->
-  <footer class="container-fluid footer_section">
-    <p>
-      &copy; <span id="currentYear"></span> All Rights Reserved. Design by
-      <a href="https://html.design/">Free Html Templates</a>
-    </p>
-  </footer>
-  <!-- footer section -->
-
+  <!-- end contact section -->
+  <script>
+    document.addEventListener('scroll', function () {
+      const scrolled = window.scrollY;
+      document.querySelector('.hero_bg_box .img-box img').style.transform = `translateY(-${scrolled * 0.5}px)`;
+    });
+  </script>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/custom.js"></script>
